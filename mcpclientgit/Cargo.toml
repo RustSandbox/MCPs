@@ -1,0 +1,11 @@
+[package]
+name = "mcpclientgit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.47.1", features = ["full"] }
+anyhow = "1.0.99"
+rmcp = { version = "0.6", features = ["transport-child-process", "client"] }
+rig-core = { version = "0.21.0", features = ["all", "rmcp"] }
+rig-bedrock = "0.3.2"
